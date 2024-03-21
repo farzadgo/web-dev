@@ -3,7 +3,7 @@
 </script>
 
 <div class="app">
-	<main class="flex justify-center">
+	<main class="lg:flex lg:justify-center">
 		<slot />
 	</main>
 </div>

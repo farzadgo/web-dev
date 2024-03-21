@@ -19,7 +19,7 @@
 </script>
 
 
-<div class="mb-10 md:mb-20 border border-gray-200 p-4 md:p-6 bg-gray-100 rounded-xl md:rounded-2xl text-gray-800">
+<div class="mb-14 md:mb-20 border border-gray-200 p-4 md:p-6 bg-gray-100 rounded-xl md:rounded-2xl text-gray-800">
 
   <div class="flex justify-between items-end mb-2">
     <h2 class="text-md md:text-xl font-bold mr-2">{@html project.title}</h2>
@@ -53,6 +53,7 @@
           alt={image.alt}
           use:lazyLoad={image.url}
           class="ph object-cover w-auto opacity-0 transition-opacity duration-500 last:mr-4 md:last:mr-6 rounded-md md:rounded-xl border border-gray-200 shadow-sm"
+          loading="lazy"
         />
         {/if}
       {/each}
