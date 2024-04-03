@@ -1,10 +1,10 @@
-export type Image = {
+interface Image {
   id: number;
   alt: string;
   url: string;
 };
 
-export type Project = {
+export interface Project {
   id: number;
   title: string;
   date: string;
@@ -16,4 +16,19 @@ export type Project = {
   employer?: string;
   designer?: string;
   description?: string;
+}
+
+export enum ModalType {
+  SKILLS = 'skills',
+  EXPERIENCE = 'experience',
+  EDUCATION = 'education'
+}
+
+export interface Modal {
+  id: number;
+  title: string;
+  subtitle?: string;
+  date?: string;
+  description: string;
+  type: ModalType;
 }

@@ -1,15 +1,13 @@
 <script lang="ts">
-  import type { Project } from "./types";
-  import external from '$lib/assets/external-link.svg';
-  import code from '$lib/assets/code.svg';
-  // import code from '$lib/assets/github.svg';
+  import type { Project } from './types';
+  import { ArrowUpRight, Code } from 'svelte-feathers';
   import { lazyLoad } from '$lib/lazyLoad';
 
   export let project: Project;
-  // console.log(project);
 
   const separateArrayItmes = (arr: string[]) => arr.join(' • ');
 
+  const iconStyle = 'h-6 w-6 md:h-7 md:w-7 stroke-[1.0] fill-none stroke-[#cc0066]';
 
   // const namedDate = (date: string) => {
   //   let monthName = new Date(date).toLocaleString('default', { month: 'long' });
@@ -24,17 +22,17 @@
   <div class="flex justify-between items-end mb-2">
     <h2 class="text-md md:text-xl font-bold mr-2">{@html project.title}</h2>
     <div class="hidden md:flex grow h-1 border-t border-gray-300 border-dotted"></div>
-    <div class="flex gap-5 pt-1 ml-3">
-      <a class="w-6 h-6" target="_blank" href={project.liveUrl}><img src={external} alt='live link'></a>
-      <a class="w-6 h-6" target="_blank" href={project.codeUrl}><img src={code} alt='code link'></a>
+    <div class="flex gap-4 pt-1 ml-4">
+      <!-- <a class="w-6 h-6" target="_blank" href={project.codeUrl}><img src={code} alt='code link'></a> -->
+      <a target="_blank" href={project.codeUrl}> <Code class={iconStyle}/> </a>
+      <a target="_blank" href={project.liveUrl}> <ArrowUpRight class={iconStyle}/> </a>
     </div>
   </div>
 
   <div class="mb-6">
-    <!-- <span> {namedDate(project.date)} </span> -->
     <span> {project.date.replace('-', '.')} </span>
     {#if project.endDate}
-    <span class="text-gray-500"> – {project.endDate.replace('-', '.')}</span>
+    <span class="text-gray-400"> – {project.endDate.replace('-', '.')}</span>
     {/if}
   </div>
   
