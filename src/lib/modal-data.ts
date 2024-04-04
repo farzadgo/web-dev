@@ -1,31 +1,31 @@
 import type { Modal } from './types';
 import { ModalType } from './types';
 
-/* Bash • Python • Node.js • Express.js • Socket.io • WebSockets • Jest • Cypress • Styled Components • Chakra UI • Bootstrap • SCSS • PostCSS • Rollup • Docker • CircleCI • GitLab CI • Datadog  */
+/* Bash · Python · Node.js · Express.js · Socket.io · WebSockets · Jest · Cypress · Styled Components · Chakra UI · Bootstrap · SCSS · PostCSS · CSS Modules · Rollup · Docker · CircleCI · GitLab CI · Datadog  */
 
 export const modalData: Modal[] = [
   {
     id: 1,
     title: 'Programming Languages',
-    description: `JavaScript (ES6) • TypeScript • HTML • CSS • Markdown • JSX • GraphQL`,
+    description: `JavaScript (ES6) · TypeScript · HTML · CSS · Markdown · JSX · GraphQL`,
     type: ModalType.SKILLS,
   },
   {
     id: 2,
     title: 'Frameworks & Libraries',
-    description: `React • Svelte • Next.js • Gatsby.js • Three.js • Tailwind CSS • p5.js • Dexie.js • Mapbox GL JS • GSAP • Framer Motion • Web APIs • CSS Modules`,
+    description: `React · Svelte · Next.js · Three.js · Gatsby.js · Tailwind CSS · p5.js · Dexie.js · Mapbox GL JS · GSAP · Web APIs · Framer Motion`,
     type: ModalType.SKILLS,
   },
   {
     id: 3,
     title: 'Tools & Platforms',
-    description: `Git • npm • Vite • Webpack • Netlify • Vercel • CI/CD • Agile • Windows • Linux`,
+    description: `Git · npm · Windows · Linux · Agile · Vite · Webpack · CI/CD · Netlify · Vercel · Figma`,
     type: ModalType.SKILLS,
   },
   {
     id: 4,
     title: 'Software',
-    description: `Rhino3D · Grasshopper 3D · Blender · Figma · SketchUp · Adobe Photoshop · Adobe Illustrator · Adobe InDesign · DaVinci Resolve`,
+    description: `Rhino3D · Grasshopper 3D · Blender · SketchUp · Adobe Photoshop · Adobe Illustrator · Adobe InDesign · DaVinci Resolve`,
     type: ModalType.SKILLS,
   },
   {
@@ -78,7 +78,7 @@ export const modalData: Modal[] = [
   {
     id: 10,
     title: 'Middle East Technical University',
-    subtitle: 'Master’s in Digital Media',
+    subtitle: 'Bachelor of Architecture',
     date: '2009 – 2014 / Ankara, TR',
     description: `— Focus on Design and technological methods such as CG and Algorithmic Design`,
     type: ModalType.EDUCATION,

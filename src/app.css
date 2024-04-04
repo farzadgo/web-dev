@@ -5,7 +5,7 @@
 
 @layer base {
 	.modal a {
-		@apply text-[#cc0066];
+		@apply underline underline-offset-2 decoration-[1.5px] decoration-zinc-400;
 
 		&:hover {
 			@apply underline;
