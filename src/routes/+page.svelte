@@ -7,6 +7,13 @@
   import Modal from '$lib/Modal.svelte';
   import { Github, Linkedin, Mail, Phone, Download, Sun, Moon } from 'svelte-feathers';
 
+  const sitedata = {
+    title: 'farzadgo',
+    description: 'Farzad Golghasemi: Frontend Web Developer based in Germany',
+    image: '/farzadgo-dev.png',
+    url: 'https://fago.vercel.app'
+  }
+
   let showModal = false;
   let modalType: ModalType;
 
@@ -72,25 +79,24 @@
 </script>
 
 <svelte:head>
-	<title> farzadgo </title>
-	<meta name="description" content="farzadgo webdev works"/>
+	<title> {sitedata.title} </title>
+	<meta name="description" content={sitedata.description}/>
+  <meta name="image" content={`${sitedata.url}${sitedata.image}`} />
+  <meta property="og:title" content={sitedata.title} />
+  <meta property="og:description" content={sitedata.description} />
+  <meta property="og:image" content={`${sitedata.url}${sitedata.image}`} />
+  <meta property="og:url" content={sitedata.url} />
+  <meta property="og:type" content="website" />
 </svelte:head>
 
 
 <section class="px-4 py-8 lg:w-[910px] text-zinc-800 dark:text-zinc-300">
 
   <h1 class="text-3xl md:text-4xl font-bold mb-2"> Farzad Golghasemi </h1>
-  <h3 class="md:text-xl mb-10"> Frontend Web Developer based in Bremen Germany </h3>
+  <h3 class="md:text-xl mb-10"> Frontend Web Developer based in Germany </h3>
 
   <ul class="contact flex flex-col md:flex-row gap-3 md:gap-8 mb-10 md:mb-20">
-    <li class="flex items-center">
-      <Github class={contactIconStyle}/>
-      <a class="underline underline-offset-2 decoration-[1.5px] decoration-zinc-400" target="_blank" href="https://github.com/farzadgo/"> farzadgo </a>
-    </li>
-    <li class="flex items-center">
-      <Linkedin class={contactIconStyle}/>
-      <a class="underline underline-offset-2 decoration-[1.5px] decoration-zinc-400" target="_blank" href="https://www.linkedin.com/in/farzadgo/"> in/farzadgo </a>
-    </li>
+
     <li class="flex items-center">
       <Mail class={contactIconStyle}/>
       <span> farzyxo@gmail.com </span>
@@ -99,13 +105,21 @@
       <Phone class={contactIconStyle}/>
       <span> +49 177 9115469 </span>
     </li>
+    <li class="flex items-center">
+      <Github class={contactIconStyle}/>
+      <a class="underline underline-offset-2 decoration-[1.5px] decoration-zinc-400" target="_blank" href="https://github.com/farzadgo/"> farzadgo </a>
+    </li>
+    <li class="flex items-center">
+      <Linkedin class={contactIconStyle}/>
+      <a class="underline underline-offset-2 decoration-[1.5px] decoration-zinc-400" target="_blank" href="https://www.linkedin.com/in/farzadgo/"> in/farzadgo </a>
+    </li>
   </ul>
 
   <div class="flex gap-5 justify-center mb-14 md:mb-20 items-end">
-    <a href="/Farzad-Golghasemi_dev-CV_2024-03_EN.pdf" download> <Download class={settingsIconStyle}/> </a>
     {#if lastModified}
       <p class="text-sm"> Last updated {namedDate(lastModified)} </p>
     {/if}
+    <a href="/Farzad-Golghasemi_dev-CV_2024-03_EN.pdf" download> <Download class={settingsIconStyle}/> </a>
     <button on:click={toogleTheme}>
       {#if activeTheme === 'dark'}
         <Sun class={settingsIconStyle}/>
