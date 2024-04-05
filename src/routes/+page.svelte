@@ -12,6 +12,13 @@
 
   let body: HTMLElement | null;
   let activeTheme = 'light';
+  let lastModified: string;
+
+  const namedDate = (date: string) => {
+    let monthName = new Date(date).toLocaleString('default', { month: 'long' });
+    let day = new Date(date).getDate();
+    return `${monthName.substring(0, 3)} ${day}, ${new Date(date).getFullYear()}`;
+  }
 
   const modalBtnStyle = 'bg-zinc-100 dark:bg-zinc-700 border border-zinc-200 dark:border-zinc-600 py-1 px-3 rounded-full';
   const contactIconStyle = 'h-4 w-4 md:h-5 md:w-5 stroke-[1.5] fill-none mr-4 md:mr-3';
@@ -59,6 +66,7 @@
 
   onMount(() => {
     body = document.querySelector('body');
+    lastModified = document.lastModified;
   });
 
 </script>
@@ -74,7 +82,7 @@
   <h1 class="text-3xl md:text-4xl font-bold mb-2"> Farzad Golghasemi </h1>
   <h3 class="md:text-xl mb-10"> Frontend Web Developer based in Bremen Germany </h3>
 
-  <ul class="contact flex flex-col md:flex-row gap-3 md:gap-8 mb-8 md:mb-20">
+  <ul class="contact flex flex-col md:flex-row gap-3 md:gap-8 mb-10 md:mb-20">
     <li class="flex items-center">
       <Github class={contactIconStyle}/>
       <a class="underline underline-offset-2 decoration-[1.5px] decoration-zinc-400" target="_blank" href="https://github.com/farzadgo/"> farzadgo </a>
@@ -93,8 +101,11 @@
     </li>
   </ul>
 
-  <div class="flex gap-4 justify-center mb-14 md:mb-20">
+  <div class="flex gap-5 justify-center mb-14 md:mb-20 items-end">
     <a href="/Farzad-Golghasemi_dev-CV_2024-03_EN.pdf" download> <Download class={settingsIconStyle}/> </a>
+    {#if lastModified}
+      <p class="text-sm"> Last updated {namedDate(lastModified)} </p>
+    {/if}
     <button on:click={toogleTheme}>
       {#if activeTheme === 'dark'}
         <Sun class={settingsIconStyle}/>
@@ -115,8 +126,8 @@
   {/if}
 
   <div class="mb-10">
-    <h2 class="text-xl mb-2" > Selected Web Projects </h2>
-    <p class="text-sm"> <i> * Following web-projects are programmed and designed by Farzad Golghasemi unless mentioned otherwise </i></p>
+    <h2 class="text-lg font-bold mb-2" > Selected Web Projects <span class="text-sm font-thin">(Newest first)</span></h2>
+    <p class="text-sm"> <i> * Following web-projects are programmed and designed by Farzad Golghasemi unless mentioned otherwise.  </i></p>
   </div>
 
   {#each projects as project}

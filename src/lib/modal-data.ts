@@ -7,25 +7,25 @@ export const modalData: Modal[] = [
   {
     id: 1,
     title: 'Programming Languages',
-    description: `JavaScript (ES6) · TypeScript · HTML · CSS · Markdown · JSX · GraphQL`,
+    stack: ['JavaScript (ES6)', 'TypeScript', 'HTML', 'CSS', 'Markdown', 'JSX', 'GraphQL'],
     type: ModalType.SKILLS,
   },
   {
     id: 2,
     title: 'Frameworks & Libraries',
-    description: `React · Svelte · Next.js · Three.js · Gatsby.js · Tailwind CSS · p5.js · Dexie.js · Mapbox GL JS · GSAP · Web APIs · Framer Motion`,
+    stack: ['React', 'Svelte', 'Next.js', 'Three.js', 'Gatsby.js', 'Tailwind CSS', 'p5.js', 'Dexie.js', 'Mapbox GL JS', 'GSAP', 'Web APIs', 'Framer Motion'],
     type: ModalType.SKILLS,
   },
   {
     id: 3,
     title: 'Tools & Platforms',
-    description: `Git · npm · Windows · Linux · Agile · Vite · Webpack · CI/CD · Netlify · Vercel · Figma`,
+    stack: ['Git', 'npm', 'Windows', 'Linux', 'Agile', 'Vite', 'Webpack', 'CI/CD', 'Netlify', 'Vercel', 'Figma'],
     type: ModalType.SKILLS,
   },
   {
     id: 4,
     title: 'Software',
-    description: `Rhino3D · Grasshopper 3D · Blender · SketchUp · Adobe Photoshop · Adobe Illustrator · Adobe InDesign · DaVinci Resolve`,
+    stack: ['Rhino3D', 'Grasshopper 3D', 'Blender', 'SketchUp', 'Adobe Photoshop', 'Adobe Illustrator', 'Adobe InDesign', 'DaVinci Resolve'],
     type: ModalType.SKILLS,
   },
   {

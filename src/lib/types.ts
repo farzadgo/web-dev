@@ -10,8 +10,8 @@ export interface Project {
   date: string;
   endDate?: string;
   stack: string[];
-  liveUrl?: string;
-  codeUrl?: string;
+  liveUrl: string;
+  codeUrl: string;
   images?: Image[];
   employer?: string;
   designer?: string;
@@ -29,6 +29,7 @@ export interface Modal {
   title: string;
   subtitle?: string;
   date?: string;
-  description: string;
+  description?: string;
+  stack?: string[];
   type: ModalType;
 }

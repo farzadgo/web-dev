@@ -113,7 +113,7 @@ export const projects: Project[] = [
   },
   {
     id: 4,
-    title: 'Website for the project MINE',
+    title: 'Website for the project <i>MINE</i>',
     date: '2023-08',
     liveUrl: 'https://notyet.quest/',
     codeUrl: 'https://github.com/farzadgo/notyet.quest/',
@@ -185,7 +185,7 @@ export const projects: Project[] = [
   },
   {
     id: 7,
-    title: 'Website for the project RESTORE_',
+    title: 'Website for the project <i>RESTORE_</i>',
     date: '2022-03',
     endDate: '2022-07',
     liveUrl: 'https://restore-bremen.space/',
@@ -301,11 +301,12 @@ export const projects: Project[] = [
     stack: ['JavaScript', 'SPA', 'CSS', 'Media Recording API'],
   },
   {
-    id: 12,
+    id: 13,
     title: 'Personal Portfolio Website [v1]',
     date: '2019-02',
     endDate: '2019-05',
     liveUrl: 'https://farzadgo.github.io/v1/',
+    codeUrl: 'https://github.com/farzadgo/v1',
     stack: ['HTML', 'CSS', 'JavaScript', 'Bootstrap', 'p5.js'],
   },
 ];
