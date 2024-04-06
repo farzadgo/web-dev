@@ -8,7 +8,7 @@ export const projects: Project[] = [
     endDate: '2024-01',
     liveUrl: 'https://netzwerkzwischennutzung.de/',
     codeUrl: 'https://github.com/guidaGG/NZN-frontend/',
-    stack: ['Svelte', 'TypeScript', 'GraphQL', 'Strapi', 'Mapbox GL JS', 'Tailwind CSS', 'Responsive Design', 'SEO'],
+    stack: ['Svelte', 'TypeScript', 'GraphQL', 'Strapi', 'Mapbox GL JS', 'Tailwind CSS', 'Responsive Design'],
     images: [
       {
         id: 1,
@@ -137,7 +137,7 @@ export const projects: Project[] = [
     date: '2023-06',
     liveUrl: 'https://gvaldespino.xyz/',
     codeUrl: 'https://github.com/farzadgo/gabi-portfolio',
-    stack: ['Next.js', 'PDF rendering', 'SEO', 'CSS', 'Jamstack'],
+    stack: ['Next.js', 'PDF rendering', 'CSS', 'Jamstack'],
     images: [
       {
         id: 1,
@@ -235,7 +235,7 @@ export const projects: Project[] = [
     date: '2021-05',
     liveUrl: 'https://fagosemi.xyz/',
     codeUrl: 'https://github.com/farzadgo/v2',
-    stack: ['Gatsby', 'React', 'Three.js', 'CSS', 'Responsive Design','SEO', 'Jamstack'],
+    stack: ['Gatsby', 'React', 'Three.js', 'CSS', 'Responsive Design', 'Jamstack'],
   },
   {
     id: 10,

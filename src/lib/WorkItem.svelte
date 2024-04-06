@@ -49,7 +49,7 @@
   
   <ul class="flex flex-wrap gap-2 mb-1 font-mono">
     {#each project.stack as stackItem}
-      <li class="flex-initial whitespace-nowrap text-sm px-3 py-1 rounded-full text-zinc-600 dark:text-zinc-300 border border-zinc-400 dark:border-zinc-500"> {stackItem} </li>
+      <li class="flex-initial whitespace-nowrap text-xs md:text-sm px-3 py-1 rounded-full text-zinc-600 dark:text-zinc-300 border border-zinc-300 dark:border-zinc-500"> {stackItem} </li>
     {/each}
   </ul>
 

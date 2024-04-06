@@ -80,13 +80,18 @@
 
 <svelte:head>
 	<title> {sitedata.title} </title>
-	<meta name="description" content={sitedata.description}/>
+	<meta name="description" content={sitedata.description} />
   <meta name="image" content={`${sitedata.url}${sitedata.image}`} />
   <meta property="og:title" content={sitedata.title} />
   <meta property="og:description" content={sitedata.description} />
   <meta property="og:image" content={`${sitedata.url}${sitedata.image}`} />
   <meta property="og:url" content={sitedata.url} />
   <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:creator" content="@fagosemi" />
+  <meta name="twitter:title" content={sitedata.title} />
+  <meta name="twitter:description" content={sitedata.description} />
+  <meta name="twitter:image" content={sitedata.image} />
 </svelte:head>
 
 
@@ -117,7 +122,7 @@
 
   <div class="flex gap-5 justify-center mb-14 md:mb-20 items-end">
     {#if lastModified}
-      <p class="text-sm"> Last updated {namedDate(lastModified)} </p>
+      <p class="text-xs md:text-sm"> Last updated {namedDate(lastModified)} </p>
     {/if}
     <a href="/Farzad-Golghasemi_dev-CV_2024-03_EN.pdf" download> <Download class={settingsIconStyle}/> </a>
     <button on:click={toogleTheme}>

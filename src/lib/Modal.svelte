@@ -15,7 +15,7 @@
 <div class="fixed inset-0 flex h-screen w-screen justify-center bg-zinc-200/60 dark:bg-zinc-700/70 backdrop-blur-[9px]">
   <div class="modal flex flex-col px-4 w-full lg:w-[910px] overflow-auto">
 
-    <button on:click={closeHandler} class="ml-auto mt-6 mb-6 md:mb-12">
+    <button on:click={closeHandler} class="ml-auto mt-6 mb-3 md:mb-12">
       <X class="h-12 w-12 md:h-16 md:w-16 stroke-[0.5]"/>
     </button>
 
@@ -34,7 +34,7 @@
       {#if item.stack}
         <ul class="flex flex-wrap gap-2 mt-4 font-mono">
           {#each item.stack as stackItem}
-            <li class="flex-initial whitespace-nowrap text-base px-3 py-1 rounded-full border-2 border-zinc-300 dark:border-zinc-600"> {stackItem} </li>
+            <li class="flex-initial whitespace-nowrap text-sm md:text-base px-3 py-1 rounded-full border-2 border-zinc-300 dark:border-zinc-600"> {stackItem} </li>
           {/each}
         </ul>
       {/if}
