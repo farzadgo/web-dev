@@ -24,12 +24,22 @@ export enum ModalType {
   EDUCATION = 'education'
 }
 
+export enum Language {
+  EN = 'EN',
+  DE = 'DE'
+}
+
+interface LingualContent {
+  [Language.EN]: string;
+  [Language.DE]: string;
+}
+
 export interface Modal {
   id: number;
-  title: string;
-  subtitle?: string;
+  title: LingualContent;
+  subtitle?: LingualContent;
   date?: string;
-  description?: string;
+  description?: LingualContent;
   stack?: string[];
   type: ModalType;
 }

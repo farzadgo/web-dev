@@ -1,16 +1,23 @@
 <script lang="ts">
-  import type { Project } from './types';
+  import type { Project, Language } from './types';
   import { ArrowUpRight, Code } from 'svelte-feathers';
   import { lazyLoad } from '$lib/lazyLoad';
 
+  export let lang: Language;
   export let project: Project;
 
-  const linkIconStyle = 'h-6 w-6 md:h-7 md:w-7 stroke-[1.5] fill-none';
+  const topics = {
+    EN: {
+      employer: 'employer',
+      designer: 'designer'
+    },
+    DE: {
+      employer: 'Arbeitgeber',
+      designer: 'Designer*in'
+    }
+  };
 
-  // const namedDate = (date: string) => {
-  //   let monthName = new Date(date).toLocaleString('default', { month: 'long' });
-  //   return `${new Date(date).getFullYear()} ${monthName}`;
-  // }
+  const linkIconStyle = 'h-6 w-6 md:h-7 md:w-7 stroke-[1.5] fill-none';
 
 </script>
 
@@ -19,7 +26,7 @@
 
   <div class="flex justify-between items-end mb-2">
     <h2 class="text-lg md:text-xl font-bold mr-2">{@html project.title}</h2>
-    <!-- <div class="hidden md:flex grow h-1 border-t border-zinc-300 border-dotted"></div> -->
+    <!-- <div class="hidden sm:flex grow h-1 border-t border-zinc-600 border-dotted"></div> -->
     <div class="flex gap-4 pt-1 ml-4">
       <a target="_blank" href={project.codeUrl}> <Code class={linkIconStyle}/> </a>
       <a target="_blank" href={project.liveUrl}> <ArrowUpRight class={linkIconStyle}/> </a>
@@ -39,10 +46,10 @@
         <p> {@html project.description} </p>
       {/if}
       {#if project.employer}
-        <p> <i>employer</i> → {project.employer} </p>
+        <p> <i>{topics[lang].employer}</i> → {project.employer} </p>
       {/if}
       {#if project.designer}
-        <p> <i>designer</i> → {project.designer} </p>
+        <p> <i>{topics[lang].designer}</i> → {project.designer} </p>
       {/if}
     </div>
   {/if}
