@@ -1,19 +1,19 @@
 import type { Modal } from './types';
 import { ModalType } from './types';
 
-/* Bash, Python, Node.js, Express.js, Socket.io, WebSockets, Jest, Cypress, Styled Components, Chakra UI, Bootstrap, SCSS, PostCSS, Rollup, Docker, CircleCI, GitLab CI, Datadog, ... */
+/* Bash, Python, Docker, Node.js, Express.js, SQL, PostgreSQL, WebSockets, Socket.io, Jest, Cypress, Styled Components, Chakra UI, Bootstrap, SCSS, PostCSS, Rollup, CircleCI, GitLab CI, Datadog, ... */
 
 export const modalData: Modal[] = [
   {
     id: 1,
     title: {EN: 'Programming Languages', DE: 'Programmiersprachen'},
-    stack: ['JavaScript (ES6)', 'TypeScript', 'HTML', 'CSS', 'Markdown', 'JSX', 'GraphQL'],
+    stack: ['JavaScript (ES6)', 'TypeScript', 'HTML', 'CSS', 'Markdown', 'JSX', ],
     type: ModalType.SKILLS,
   },
   {
     id: 2,
     title: {EN: 'Frameworks & Libraries', DE: 'Frameworks & Libraries'},
-    stack: ['React', 'Svelte', 'Next.js', 'Three.js', 'Gatsby.js', 'Tailwind CSS', 'p5.js', 'Dexie.js', 'Mapbox GL JS', 'GSAP', 'Web APIs', 'Framer Motion'],
+    stack: ['React', 'Svelte', 'Next.js', 'Three.js', 'GraphQL', 'REST API', 'Gatsby.js', 'Tailwind CSS', 'p5.js', 'Dexie.js', 'Mapbox GL JS', 'Framer Motion'],
     type: ModalType.SKILLS,
   },
   {
@@ -25,7 +25,7 @@ export const modalData: Modal[] = [
   {
     id: 4,
     title: {EN: 'Software', DE: 'Software'},
-    stack: ['Rhino3D', 'Grasshopper 3D', 'Blender', 'SketchUp', 'Adobe Photoshop', 'Adobe Illustrator', 'Adobe InDesign', 'Figma'],
+    stack: ['Rhino3D', 'Grasshopper 3D', 'Blender', 'SketchUp', 'Photoshop', 'Illustrator', 'InDesign', 'Figma'],
     type: ModalType.SKILLS,
   },
   {

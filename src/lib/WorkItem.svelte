@@ -12,7 +12,7 @@
       designer: 'designer'
     },
     DE: {
-      employer: 'Arbeitgeber',
+      employer: 'Arbeitgeber*in',
       designer: 'Designer*in'
     }
   };
@@ -25,7 +25,7 @@
 <div class="mb-14 md:mb-20 bg-zinc-100 dark:bg-zinc-700 border border-zinc-200 dark:border-zinc-600 p-4 md:p-6 rounded-xl md:rounded-2xl">
 
   <div class="flex justify-between items-end mb-2">
-    <h2 class="text-lg md:text-xl font-bold mr-2">{@html project.title}</h2>
+    <h2 class="text-lg md:text-xl font-bold mr-2">{@html project.title[lang]}</h2>
     <!-- <div class="hidden sm:flex grow h-1 border-t border-zinc-600 border-dotted"></div> -->
     <div class="flex gap-4 pt-1 ml-4">
       <a target="_blank" href={project.codeUrl}> <Code class={linkIconStyle}/> </a>
@@ -43,7 +43,7 @@
   {#if project.description || project.employer || project.designer}
     <div class="flex flex-col gap-2 text-sm text-zinc-500 dark:text-zinc-400 mb-7">
       {#if project.description}
-        <p> {@html project.description} </p>
+        <p> {@html project.description[lang]} </p>
       {/if}
       {#if project.employer}
         <p> <i>{topics[lang].employer}</i> → {project.employer} </p>

@@ -30,7 +30,7 @@
       }
     },
     DE: {
-      subtile: 'Frontend Webentwickler* in Bremen und Berlin',
+      subtile: 'Frontend Webentwickler* (in Deutschland)',
       updated: 'Zuletzt aktualisiert',
       modalBtn: {
         experience: 'Relevante Erfahrungen',
@@ -62,7 +62,7 @@
   // }
 
   const modalBtnStyle = 'bg-zinc-100 dark:bg-zinc-700 border border-zinc-200 dark:border-zinc-600 py-1 px-3 rounded-full';
-  const contactIconStyle = 'h-4 w-4 md:h-5 md:w-5 stroke-[1.5] fill-none mr-4 md:mr-3';
+  const contactIconStyle = 'h-4 w-4 md:h-5 md:w-5 stroke-[1.0] fill-none mr-4 md:mr-3';
   const settingsIconStyle = 'h-8 w-8 stroke-[1.0] fill-none';
 
   const toogleLanguage = () => {
@@ -138,13 +138,12 @@
 </svelte:head>
 
 
-<section class="px-4 py-8 lg:w-[860px] text-zinc-800 dark:text-zinc-300">
+<section class="px-4 py-8 lg:w-[880px] text-zinc-800 dark:text-zinc-300">
 
   <h1 class="text-3xl md:text-4xl font-bold mb-2"> Farzad Golghasemi </h1>
   <h3 class="md:text-xl mb-10"> {content.subtile} </h3>
 
-  <ul class="contact flex flex-col md:flex-row gap-3 md:gap-8 mb-10 md:mb-20">
-
+  <ul class="contact flex flex-col md:flex-row gap-3 md:gap-8 mb-10 md:mb-16">
     <li class="flex items-center">
       <Mail class={contactIconStyle}/>
       <span> farzyxo@gmail.com </span>
@@ -163,7 +162,7 @@
     </li>
   </ul>
 
-  <div class="flex gap-4 md:gap-5 justify-center mb-14 md:mb-20 items-center">
+  <div class="flex gap-4 md:gap-5 justify-end mb-14 md:mb-20 items-center">
     <p class="text-xs md:text-sm mt-auto"> {content.updated} Apr 8, 2024 </p>
     <a href="/Farzad-Golghasemi_dev-CV_2024-03_EN.pdf" download> <Download class={settingsIconStyle}/> </a>
     <button on:click={toogleTheme}>

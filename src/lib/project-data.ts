@@ -3,7 +3,7 @@ import type { Project } from './types';
 export const projects: Project[] = [
   {
     id: 1,
-    title: '<i>Netzwerk Zwischennutzung</i> Website',
+    title: {EN: '<i>Netzwerk Zwischennutzung</i> Website', DE: '<i>Netzwerk Zwischennutzung</i> Website'},
     date: '2023-10',
     endDate: '2024-01',
     liveUrl: 'https://netzwerkzwischennutzung.de/',
@@ -33,11 +33,14 @@ export const projects: Project[] = [
     ],
     employer: 'AAA GmbH',
     designer: 'Bas&Aer Design Studio',
-    description: 'The website was co-developed with Guida Ribeiro for the <i>Netzwerk Zwischennutzung</i> project, which is a platform regarding temporary use of vacant/unused spaces in Germany',
+    description: {
+      EN: 'The website was co-developed with Guida Ribeiro for the <i>Netzwerk Zwischennutzung</i> project, which is a platform regarding temporary use of vacant/unused spaces in Germany',
+      DE: 'Die Website wurde zusammen mit Guida Ribeiro für das Projekt <i>Netzwerk Zwischennutzung</i> entwickelt, das eine Plattform für die temporäre Nutzung von leerstehenden Räumen in Deutschland darstellt'
+    },
   },
   {
     id: 2,
-    title: '<i>Endless Twist</i> Open Access Publication',
+    title: {EN: '<i>Endless Twist</i> Open Access Publication', DE: '<i>Endless Twist</i> Open Access Veröffentlichung'},
     date: '2023-12',
     liveUrl: 'https://endlesstwist.xyz/publication/',
     codeUrl: 'https://github.com/farzadgo/endless-twist/tree/main/publication',
@@ -72,7 +75,7 @@ export const projects: Project[] = [
   },
   {
     id: 3,
-    title: 'Website for the project "moyo"',
+    title: {EN: 'Website for the project "moyo"', DE: 'Website für das Projekt “moyo”'},
     date: '2023-10',
     liveUrl: 'https://moyo-bremen.space/',
     codeUrl: 'https://github.com/farzadgo/moyo-bremen',
@@ -113,7 +116,7 @@ export const projects: Project[] = [
   },
   {
     id: 4,
-    title: 'Website for the project <i>MINE</i>',
+    title: {EN: 'Website for the project <i>MINE</i>', DE: 'Website für das Projekt <i>MINE</i>'},
     date: '2023-08',
     liveUrl: 'https://notyet.quest/',
     codeUrl: 'https://github.com/farzadgo/notyet.quest/',
@@ -133,7 +136,7 @@ export const projects: Project[] = [
   },
   {
     id: 5,
-    title: 'Portfolio Website for G. Valdespino',
+    title: {EN: 'Portfolio Website for G. Valdespino', DE: 'Portfolio-Website für G. Valdespino'},
     date: '2023-06',
     liveUrl: 'https://gvaldespino.xyz/',
     codeUrl: 'https://github.com/farzadgo/gabi-portfolio',
@@ -153,7 +156,7 @@ export const projects: Project[] = [
   },
   {
     id: 6,
-    title: '<i>Endless Twist</i> Mixed Media Website',
+    title: {EN: '<i>Endless Twist</i> Mixed Media Website', DE: '<i>Endless Twist</i> Mixed-Media Website'},
     date: '2023-01',
     endDate: '2023-10',
     liveUrl: 'https://endlesstwist.xyz/',
@@ -181,11 +184,14 @@ export const projects: Project[] = [
         url: 'https://cloud.disorient.xyz/s/jmTnfLyB59cDJpX/download/endlestwist-02.jpg',
       },
     ],
-    description: 'Part of Farzad\'s artistic research project submitted in partial fulfillment of the requirements for the degree of Master of Arts at the University of the Arts Bremen.',
+    description: {
+      EN: 'Part of Farzad\'s artistic research project submitted in partial fulfillment of the requirements for the degree of Master of Arts at the University of the Arts Bremen.',
+      DE: 'Teil von Farzads künstlerischem Forschungsprojekt, das zur Erlangung des Grades Master of Arts an der Hochschule für Künste Bremen eingereicht wurde.'
+    },
   },
   {
     id: 7,
-    title: 'Website for the project <i>RESTORE_</i>',
+    title: {EN: 'Website for the project <i>RESTORE_</i>', DE: 'Website für das Projekt <i>RESTORE_</i>'},
     date: '2022-03',
     endDate: '2022-07',
     liveUrl: 'https://restore-bremen.space/',
@@ -223,28 +229,29 @@ export const projects: Project[] = [
   },
   {
     id: 8,
-    title: 'Berlin Public Transport Demo App',
+    title: {EN: 'Berlin Public Transport Demo App', DE: 'Berlin VBB Demo-Anwendung'},
     date: '2021-07',
     liveUrl: 'https://vbb-transport-demo.netlify.app/',
     codeUrl: 'https://github.com/farzadgo/transport-app',
-    stack: ['React', 'Axios', 'CSS', 'VBB API', 'Web Storage API'],
+    stack: ['React', 'Axios', 'CSS', 'REST API', 'Web Storage API'],
   },
   {
     id: 9,
-    title: 'Personal Portfolio Website [v2]',
+    title: {EN: 'Personal Portfolio Website (current)', DE: 'Persönliche Portfolio-Website (aktuell)'},
     date: '2021-05',
+    endDate: '...',
     liveUrl: 'https://fagosemi.xyz/',
     codeUrl: 'https://github.com/farzadgo/v2',
-    stack: ['Gatsby', 'React', 'Three.js', 'CSS', 'Responsive Design', 'Jamstack'],
+    stack: ['Gatsby', 'React', 'GraphQL', 'Three.js', 'CSS', 'Responsive Design', 'Jamstack'],
   },
   {
     id: 10,
-    title: '<i>Adrift</i> Walking App (React version)',
+    title: {EN: '<i>Adrift</i> Walking App (React version)', DE: '<i>Adrift</i> Walking App (React-Version)'},
     date: '2021-01',
     endDate: '2021-04',
     liveUrl: 'https://adrift.city/',
     codeUrl: 'https://github.com/farzadgo/adrift-react',
-    stack: ['React', 'React Router', 'SPA', 'Dexie.js', 'CSS', 'PWA', 'Jamstack'],
+    stack: ['React', 'React Router', 'Dexie.js', 'CSS', 'PWA', 'Jamstack'],
     images: [
       {
         id: 1,
@@ -285,7 +292,7 @@ export const projects: Project[] = [
   },
   {
     id: 11,
-    title: 'Portfolio Website for C. Anacker',
+    title: {EN: 'Showcase Website for Carla', DE: 'Vorzeige-Website für Carla'},
     date: '2020-07',
     liveUrl: 'https://farzadgo.github.io/carla-anacker/',
     codeUrl: 'https://github.com/farzadgo/carla-anacker',
@@ -293,7 +300,7 @@ export const projects: Project[] = [
   },
   {
     id: 12,
-    title: '<i>Adrift</i> Walking App (JS version)',
+    title: {EN: '<i>Adrift</i> Walking App (JS version)', DE: '<i>Adrift</i> Walking App (JS-Version)'},
     date: '2020-02',
     endDate: '2020-06',
     liveUrl: 'https://farzadgo.github.io/adrift-js/',
@@ -302,7 +309,7 @@ export const projects: Project[] = [
   },
   {
     id: 13,
-    title: 'Personal Portfolio Website [v1]',
+    title: {EN: 'Personal Portfolio Website (legacy)', DE: 'Persönliche Portfolio-Website (alt)'},
     date: '2019-02',
     endDate: '2019-05',
     liveUrl: 'https://farzadgo.github.io/v1/',
