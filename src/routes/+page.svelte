@@ -53,7 +53,7 @@
   let modalType: ModalType;
 
   let body: HTMLElement | null;
-  let activeTheme = 'light';
+  let activeTheme = 'dark';
 
   // const namedDate = (date: string) => {
   //   let monthName = new Date(date).toLocaleString('default', { month: 'long' });
