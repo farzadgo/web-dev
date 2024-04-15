@@ -8,7 +8,7 @@ export const projects: Project[] = [
     endDate: '2024-01',
     liveUrl: 'https://netzwerkzwischennutzung.de/',
     codeUrl: 'https://github.com/guidaGG/NZN-frontend/',
-    stack: ['Svelte', 'TypeScript', 'GraphQL', 'Strapi', 'Mapbox GL JS', 'Tailwind CSS', 'Responsive Design'],
+    stack: ['Svelte', 'TypeScript', 'GraphQL', 'Strapi', 'Mapbox GL JS', 'Tailwind CSS', 'Strapi', 'Responsive Design'],
     images: [
       {
         id: 1,
@@ -75,11 +75,37 @@ export const projects: Project[] = [
   },
   {
     id: 3,
+    title: {EN: 'nota.space', DE: 'nota.space'},
+    date: '2022-04',
+    endDate: '2023-12',
+    liveUrl: 'https://nota.space/',
+    codeUrl: 'https://gitlab.com/nota.space/nota-frontend',
+    stack: ['JavaScript', 'p5.js', 'HTML', 'Django', 'PostgreSQL', 'Docker', 'Webpack'],
+    images: [
+      {
+        id: 1,
+        alt: 'nota-desktop-1',
+        url: 'https://cloud.disorient.xyz/s/SRgZf35q2sA63zs/download/nota-space-01.png',
+      },
+      {
+        id: 2,
+        alt: 'nota-desktop-2',
+        url: 'https://cloud.disorient.xyz/s/cRb5x4wY77mdNGE/download/nota-space-02.png',
+      },
+    ],
+    employer: 'nota e.V.',
+    description: {
+      EN: 'Contribution to UI and frontend functionality of the project <i>nota.space</i> which is a data-driven canvas-based modern JavaScript software with MVC pattern and a custom scripting functionality',
+      DE: 'Beitrag zur UI und Frontend-Funktionalität des Projekts <i>nota.space</i>, einer datengesteuerten, Canvas-basierten, modernen JavaScript-Software mit MVC-Pattern und einer eigenen Scripting-Funktionalität'
+    }
+  },
+  {
+    id: 4,
     title: {EN: 'Website for the project "moyo"', DE: 'Website für das Projekt “moyo”'},
     date: '2023-10',
     liveUrl: 'https://moyo-bremen.space/',
     codeUrl: 'https://github.com/farzadgo/moyo-bremen',
-    stack: ['Next.js', 'React', 'CSS', 'Responsive Design', 'Jamstack'],
+    stack: ['Next.js', 'React', 'CSS', 'Responsive Design', 'Framer Motion', 'Jamstack'],
     images: [
       {
         id: 1,
@@ -115,7 +141,7 @@ export const projects: Project[] = [
     employer: 'perspActives e.V.',
   },
   {
-    id: 4,
+    id: 5,
     title: {EN: 'Website for the project <i>MINE</i>', DE: 'Website für das Projekt <i>MINE</i>'},
     date: '2023-08',
     liveUrl: 'https://notyet.quest/',
@@ -135,7 +161,7 @@ export const projects: Project[] = [
     ],
   },
   {
-    id: 5,
+    id: 6,
     title: {EN: 'Portfolio Website for G. Valdespino', DE: 'Portfolio-Website für G. Valdespino'},
     date: '2023-06',
     liveUrl: 'https://gvaldespino.xyz/',
@@ -155,7 +181,7 @@ export const projects: Project[] = [
     ],
   },
   {
-    id: 6,
+    id: 7,
     title: {EN: '<i>Endless Twist</i> Mixed Media Website', DE: '<i>Endless Twist</i> Mixed-Media Website'},
     date: '2023-01',
     endDate: '2023-10',
@@ -190,7 +216,7 @@ export const projects: Project[] = [
     },
   },
   {
-    id: 7,
+    id: 8,
     title: {EN: 'Website for the project <i>RESTORE_</i>', DE: 'Website für das Projekt <i>RESTORE_</i>'},
     date: '2022-03',
     endDate: '2022-07',
@@ -228,7 +254,7 @@ export const projects: Project[] = [
     designer: 'Gabriel Valdespino & Farzad Golghasemi',
   },
   {
-    id: 8,
+    id: 9,
     title: {EN: 'Berlin Public Transport Demo App', DE: 'Berlin VBB Demo-Anwendung'},
     date: '2021-07',
     liveUrl: 'https://vbb-transport-demo.netlify.app/',
@@ -236,7 +262,7 @@ export const projects: Project[] = [
     stack: ['React', 'Axios', 'CSS', 'REST API', 'Web Storage API'],
   },
   {
-    id: 9,
+    id: 10,
     title: {EN: 'Personal Portfolio Website (current)', DE: 'Persönliche Portfolio-Website (aktuell)'},
     date: '2021-05',
     endDate: '...',
@@ -245,7 +271,7 @@ export const projects: Project[] = [
     stack: ['Gatsby', 'React', 'GraphQL', 'Three.js', 'CSS', 'Responsive Design', 'Jamstack'],
   },
   {
-    id: 10,
+    id: 11,
     title: {EN: '<i>Adrift</i> Walking App (React version)', DE: '<i>Adrift</i> Walking App (React-Version)'},
     date: '2021-01',
     endDate: '2021-04',
@@ -291,7 +317,7 @@ export const projects: Project[] = [
     ],
   },
   {
-    id: 11,
+    id: 12,
     title: {EN: 'Showcase Website for Carla', DE: 'Vorzeige-Website für Carla'},
     date: '2020-07',
     liveUrl: 'https://farzadgo.github.io/carla-anacker/',
@@ -299,7 +325,7 @@ export const projects: Project[] = [
     stack: ['HTML', 'CSS', 'JavaScript', 'SVG'],
   },
   {
-    id: 12,
+    id: 13,
     title: {EN: '<i>Adrift</i> Walking App (JS version)', DE: '<i>Adrift</i> Walking App (JS-Version)'},
     date: '2020-02',
     endDate: '2020-06',
@@ -308,7 +334,7 @@ export const projects: Project[] = [
     stack: ['JavaScript', 'SPA', 'CSS', 'Media Recording API'],
   },
   {
-    id: 13,
+    id: 14,
     title: {EN: 'Personal Portfolio Website (legacy)', DE: 'Persönliche Portfolio-Website (alt)'},
     date: '2019-02',
     endDate: '2019-05',

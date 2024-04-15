@@ -7,6 +7,7 @@ let options = {
 export const lazyLoad = (image: HTMLImageElement, src: string) => {
   const loaded = () => {
     // image.classList.add('visible');
+    // image.style.width = "auto";
     image.style.opacity = "1";
   }
   const observer = new IntersectionObserver(entries => {
@@ -17,6 +18,7 @@ export const lazyLoad = (image: HTMLImageElement, src: string) => {
         loaded()        
       } else {
         image.addEventListener('load', loaded)              // if the image isn't loaded yet, add an event listener
+        // image.style.width = "300px";
       }
     }
   }, options)

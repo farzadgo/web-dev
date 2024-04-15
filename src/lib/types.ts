@@ -39,6 +39,7 @@ export interface Modal {
   title: LingualContent;
   subtitle?: LingualContent;
   date?: string;
+  duration?: LingualContent;
   description?: LingualContent;
   stack?: string[];
   type: ModalType;

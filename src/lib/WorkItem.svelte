@@ -9,11 +9,11 @@
   const topics = {
     EN: {
       employer: 'employer',
-      designer: 'designer'
+      designer: 'design'
     },
     DE: {
       employer: 'Arbeitgeber*in',
-      designer: 'Designer*in'
+      designer: 'Design'
     }
   };
 
@@ -68,8 +68,7 @@
         <img
           alt={image.alt}
           use:lazyLoad={image.url}
-          class="object-cover w-auto opacity-0 transition-opacity duration-500 last:mr-4 md:last:mr-6 rounded-md md:rounded-xl border border-zinc-200 dark:border-zinc-600 shadow-sm"
-          loading="lazy"
+          class="object-cover w-auto opacity-0 transition-opacity duration-1000 last:mr-4 md:last:mr-6 rounded-md md:rounded-xl border border-zinc-200 dark:border-zinc-600 shadow-sm grayscale-[0.7]"
         />
         {/if}
       {/each}

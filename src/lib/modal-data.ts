@@ -1,10 +1,10 @@
 import type { Modal } from './types';
 import { ModalType } from './types';
 
-/* Bash, Python, Docker, Node.js, Express.js, SQL, PostgreSQL, WebSockets, Socket.io, Jest, Cypress, Styled Components, Chakra UI, Bootstrap, SCSS, PostCSS, Rollup, CircleCI, GitLab CI, Datadog, ... */
+/* Bash, Python, Docker, Express.js, SQL, PostgreSQL, WebSockets, Socket.io, Jest, Styled Components, Chakra UI, Bootstrap, SCSS, PostCSS, Rollup, CircleCI, Github Actions, GitLab CI, Datadog, ... */
 
 export const modalData: Modal[] = [
-  {
+  { /* maybe how many yeras for each skill */
     id: 1,
     title: {EN: 'Programming Languages', DE: 'Programmiersprachen'},
     stack: ['JavaScript (ES6)', 'TypeScript', 'HTML', 'CSS', 'Markdown', 'JSX', ],
@@ -13,13 +13,13 @@ export const modalData: Modal[] = [
   {
     id: 2,
     title: {EN: 'Frameworks & Libraries', DE: 'Frameworks & Libraries'},
-    stack: ['React', 'Svelte', 'Next.js', 'Three.js', 'GraphQL', 'REST API', 'Gatsby.js', 'Tailwind CSS', 'p5.js', 'Dexie.js', 'Mapbox GL JS', 'Framer Motion'],
+    stack: ['React', 'Svelte', 'Next.js', 'Cypress', 'Three.js', 'GraphQL', 'Gatsby.js', 'Tailwind CSS', 'p5.js', 'Dexie.js', 'Mapbox GL JS'],
     type: ModalType.SKILLS,
   },
   {
     id: 3,
     title: {EN: 'Tools & Platforms', DE: 'Tools & Plattformen'},
-    stack: ['Git', 'npm', 'Windows', 'Linux', 'Agile', 'Vite', 'Webpack', 'CI/CD', 'Netlify', 'Vercel'],
+    stack: ['Git', 'npm', 'Windows', 'Linux', 'Node.js', 'REST API', 'Agile', 'Vite', 'Webpack', 'CI/CD', 'Netlify', 'Vercel'],
     type: ModalType.SKILLS,
   },
   {
@@ -30,15 +30,32 @@ export const modalData: Modal[] = [
   },
   {
     id: 5,
+    title: {EN: 'Freelancer', DE: 'Freiberufler*'},
+    date: '2022-03 – present',
+    duration: {EN: '2 years', DE: '2 Jahre'},
+    description: {
+      EN: `
+        — Development of web applications and websites for clients <br>
+        — Collaboration with designers and developers in various projects`, 
+      DE: `
+        — Entwicklung von Webanwendungen und Websites für Kund*innen <br>
+        — Zusammenarbeit mit Designer*innen und Entwickler*innen in verschiedenen Projekten
+      `
+    },
+    type: ModalType.EXPERIENCE,
+  },
+  {
+    id: 5,
     title: {EN: 'Web Programmer @ nota e.V.', DE: 'Web-Programmierer* @ nota e.V.'},
     date: '2022-04 – 2023-12 / Berlin, DE',
+    duration: {EN: '1 year 8 months', DE: '1 Jahr 8 Monate'},
     description: {
       EN: `
         — Contribution to UI and front-end functionality of the project <a href="https://nota.space" target="_blank"> nota.space </a> <br>
-        — modern JavaScript programming for p5.js-based software `, 
+        — Modern JavaScript programming for a data-driven canvas-based web software with MVC pattern and a custom scripting functionality`, 
       DE: `
         — Beitrag zur Nutzerschnittstelle und Front-End-Funktionalität des Projekts <a href="https://nota.space" target="_blank"> nota.space </a> <br>
-        — moderne JavaScript-Programmierung für auf p5.js basierende Software
+        — Moderne JavaScript-Programmierung für eine datengesteuerte Canvas-basierte Web-Software mit MVC-Muster und einer eigenen Scripting-Funktionalität
       `
     },
     type: ModalType.EXPERIENCE,
@@ -47,11 +64,14 @@ export const modalData: Modal[] = [
     id: 6,
     title: {EN: 'Web Designer @ collectAI GmbH', DE: 'Webdesigner* @ collectAI GmbH'},
     date: '2021-07 – 2021-11 / Hamburg, DE',
+    duration: {EN: '5 months', DE: '5 Monate'},
     description: {
       EN: `
-        — Design and JavaScript development of landing pages, emails and their behavior `, 
+        — Design and JavaScript development of landing pages, emails and their behavior <br>
+        — Working together with managers, designers, and developers through agile workflow`,
       DE: `
-        — Gestaltung und JavaScript-Entwicklung von Landingpages, E-Mails und deren Verhalten
+        — Gestaltung und JavaScript-Entwicklung von Landingpages, E-Mails <br>
+        — Zusammenarbeit mit Manager*innen, Designer*innen und Entwickler*innen durch Agile Workflow
       `
     },
     type: ModalType.EXPERIENCE,
@@ -59,29 +79,33 @@ export const modalData: Modal[] = [
   {
     id: 7,
     title: {EN: 'UI/UX Designer @ Bremer Institut für Produktion und Logistik GmbH (BIBA)', DE: 'UI/UX-Designer* @ Bremer Institut für Produktion und Logistik GmbH (BIBA)'},
-    date: '2018-06 – 2021-05 / Bremen, DE',
+    date: '2019-06 – 2021-05 / Bremen, DE',
+    duration: {EN: '2 years', DE: '2 Jahre'},
     description: {
       EN: `
         — Research on employing and combining VUIs & GUIs regarding a chatbot app <br>
         — Design and research on developing platform for state machines and SCXML <br>
-        — Communicate and collaborate with a team of engineers and designers `,
+        — Communicate and collaborate with a team of engineers and designers through agile workflow`,
       DE: `
         — Forschung zur Verwendung und Kombination von GUIs in Bezug auf eine Chatbot-App <br>
         — Gestaltung und Forschung zur Entwicklung einer Plattform für Zustandsautomaten und SCXML <br>
-        — Kommunikation und Zusammenarbeit mit einem Team von Ingenieur*innen und Designer*innen
+        — Kommunikation und Zusammenarbeit mit einem Team von Ingenieur*innen und Designer*innen durch Agile Workflow
       `
     },
     type: ModalType.EXPERIENCE,
   },
   {
     id: 8,
-    title: {EN: '3D modeling & visualization @ various design firms', DE: '3D-Modellierung & Visualisierung @ verschiedene Designbüros'},
-    date: '2012-12 – 2016-06 / Ankara, TR',
+    title: {EN: '3D modeling & visualization', DE: '3D-Modellierung & Visualisierung'},
+    date: '2012 – 2016 / Ankara, TR',
+    duration: {EN: '4 years', DE: '4 Jahre'},
     description: {
       EN: `
-        — Design, 3D and algorithmic modeling, and visualization for variety of architecture projects in collaboration with teams of engineers and designers `,
+        — Design, 3D and algorithmic modeling, and visualization for various clients and architecture projects <br>
+        — In collaboration with teams of engineers and designers from various disciplines`,
       DE: `
-        — Design, 3D- und algorithmische Modellierung und Visualisierung für eine Vielzahl von Architekturprojekten in Zusammenarbeit mit Teams von Ingenieur*innen und Designer*innen
+        — Design, 3D- und algorithmische Modellierung und Visualisierung für verschiedene Designbüros und Architekturprojekte <br>
+        — In Zusammenarbeit mit Teams von Ingenieur*innen und Designer*innen aus verschiedenen Disziplinen
       `
     },
     type: ModalType.EXPERIENCE,
