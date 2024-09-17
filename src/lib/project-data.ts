@@ -2,13 +2,13 @@ import type { Project } from './types';
 
 export const projects: Project[] = [
   {
-    id: 1,
+    id: 12,
     title: {EN: '<i>Netzwerk Zwischennutzung</i> Website', DE: '<i>Netzwerk Zwischennutzung</i> Website'},
     date: '2023-10',
     endDate: '2024-01',
     liveUrl: 'https://netzwerkzwischennutzung.de/',
     codeUrl: 'https://github.com/guidaGG/NZN-frontend/',
-    stack: ['Svelte', 'TypeScript', 'GraphQL', 'Strapi', 'Mapbox GL JS', 'Tailwind CSS', 'Strapi', 'Responsive Design'],
+    stack: ['Svelte', 'TypeScript', 'GraphQL', 'Strapi', 'Mapbox GL JS', 'Tailwind CSS', 'Responsive Design'],
     images: [
       {
         id: 1,
@@ -39,7 +39,7 @@ export const projects: Project[] = [
     },
   },
   {
-    id: 2,
+    id: 11,
     title: {EN: '<i>Endless Twist</i> Open Access Publication', DE: '<i>Endless Twist</i> Open Access Veröffentlichung'},
     date: '2023-12',
     liveUrl: 'https://endlesstwist.xyz/publication/',
@@ -74,7 +74,7 @@ export const projects: Project[] = [
     ],
   },
   {
-    id: 3,
+    id: 10,
     title: {EN: 'nota.space', DE: 'nota.space'},
     date: '2022-04',
     endDate: '2023-12',
@@ -100,7 +100,7 @@ export const projects: Project[] = [
     }
   },
   {
-    id: 4,
+    id: 9,
     title: {EN: 'Website for the project "moyo"', DE: 'Website für das Projekt “moyo”'},
     date: '2023-10',
     liveUrl: 'https://moyo-bremen.space/',
@@ -141,10 +141,10 @@ export const projects: Project[] = [
     employer: 'perspActives e.V.',
   },
   {
-    id: 5,
+    id: 8,
     title: {EN: 'Website for the project <i>MINE</i>', DE: 'Website für das Projekt <i>MINE</i>'},
     date: '2023-08',
-    liveUrl: 'https://notyet.quest/',
+    liveUrl: 'https://notyet.vercel.app/',
     codeUrl: 'https://github.com/farzadgo/notyet.quest/',
     stack: ['Next.js', 'React', 'CSS', 'Jamstack'],
     images: [
@@ -161,7 +161,7 @@ export const projects: Project[] = [
     ],
   },
   {
-    id: 6,
+    id: 7,
     title: {EN: 'Portfolio Website for G. Valdespino', DE: 'Portfolio-Website für G. Valdespino'},
     date: '2023-06',
     liveUrl: 'https://gvaldespino.xyz/',
@@ -181,7 +181,7 @@ export const projects: Project[] = [
     ],
   },
   {
-    id: 7,
+    id: 6,
     title: {EN: '<i>Endless Twist</i> Mixed Media Website', DE: '<i>Endless Twist</i> Mixed-Media Website'},
     date: '2023-01',
     endDate: '2023-10',
@@ -216,7 +216,7 @@ export const projects: Project[] = [
     },
   },
   {
-    id: 8,
+    id: 5,
     title: {EN: 'Website for the project <i>RESTORE_</i>', DE: 'Website für das Projekt <i>RESTORE_</i>'},
     date: '2022-03',
     endDate: '2022-07',
@@ -254,24 +254,38 @@ export const projects: Project[] = [
     designer: 'Gabriel Valdespino & Farzad Golghasemi',
   },
   {
-    id: 9,
-    title: {EN: 'Berlin Public Transport Demo App', DE: 'Berlin VBB Demo-Anwendung'},
-    date: '2021-07',
-    liveUrl: 'https://vbb-transport-demo.netlify.app/',
-    codeUrl: 'https://github.com/farzadgo/transport-app',
-    stack: ['React', 'Axios', 'CSS', 'REST API', 'Web Storage API'],
-  },
-  {
-    id: 10,
+    id: 4,
     title: {EN: 'Personal Portfolio Website (current)', DE: 'Persönliche Portfolio-Website (aktuell)'},
     date: '2021-05',
     endDate: '...',
     liveUrl: 'https://fagosemi.xyz/',
     codeUrl: 'https://github.com/farzadgo/v2',
     stack: ['Gatsby', 'React', 'GraphQL', 'Three.js', 'CSS', 'Responsive Design', 'Jamstack'],
+    images: [
+      {
+        id: 1,
+        alt: 'fagosemi-desktop-01',
+        url: 'https://cloud.disorient.xyz/s/TXyEpwAwPLaKgnr/download/fagosemi_desktop-01.png',
+      },
+      {
+        id: 2,
+        alt: 'fagosemi-desktop-02',
+        url: 'https://cloud.disorient.xyz/s/7RJW3YK26KnNQyk/download/fagosemi_desktop-02.png',
+      },
+      {
+        id: 3,
+        alt: 'fagosemi-mobile-01',
+        url: 'https://cloud.disorient.xyz/s/YLbSYcNyFZfyA5S/download/fagosemi_mobile-01.png',
+      },
+      {
+        id: 4,
+        alt: 'fagosemi-mobile-02',
+        url: 'https://cloud.disorient.xyz/s/Q7GFAc8CG4cKtRb/download/fagosemi_mobile-02.png',
+      },
+    ],
   },
   {
-    id: 11,
+    id: 3,
     title: {EN: '<i>Adrift</i> Walking App (React version)', DE: '<i>Adrift</i> Walking App (React-Version)'},
     date: '2021-01',
     endDate: '2021-04',
@@ -317,15 +331,7 @@ export const projects: Project[] = [
     ],
   },
   {
-    id: 12,
-    title: {EN: 'Showcase Website for Carla', DE: 'Vorzeige-Website für Carla'},
-    date: '2020-07',
-    liveUrl: 'https://farzadgo.github.io/carla-anacker/',
-    codeUrl: 'https://github.com/farzadgo/carla-anacker',
-    stack: ['HTML', 'CSS', 'JavaScript', 'SVG'],
-  },
-  {
-    id: 13,
+    id: 2,
     title: {EN: '<i>Adrift</i> Walking App (JS version)', DE: '<i>Adrift</i> Walking App (JS-Version)'},
     date: '2020-02',
     endDate: '2020-06',
@@ -334,8 +340,8 @@ export const projects: Project[] = [
     stack: ['JavaScript', 'SPA', 'CSS', 'Media Recording API'],
   },
   {
-    id: 14,
-    title: {EN: 'Personal Portfolio Website (legacy)', DE: 'Persönliche Portfolio-Website (alt)'},
+    id: 1,
+    title: {EN: 'Personal Portfolio Website (legacy)', DE: 'Persönliche Portfolio-Website (legacy)'},
     date: '2019-02',
     endDate: '2019-05',
     liveUrl: 'https://farzadgo.github.io/v1/',

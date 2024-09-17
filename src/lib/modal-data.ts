@@ -1,25 +1,25 @@
 import type { Modal } from './types';
 import { ModalType } from './types';
 
-/* Bash, Python, Docker, Express.js, SQL, PostgreSQL, WebSockets, Socket.io, Jest, Styled Components, Chakra UI, Bootstrap, SCSS, PostCSS, Rollup, CircleCI, Github Actions, GitLab CI, Datadog, ... */
+/* Bash, Python, Docker, Express.js, SQL, PostgreSQL, WebSockets, Socket.io, Jest, Chakra UI, Bootstrap, SCSS, PostCSS, Rollup, CircleCI, Github Actions, GitLab CI, Datadog, ... */
 
 export const modalData: Modal[] = [
-  { /* maybe how many yeras for each skill */
+  { /* TODO: maybe how many yeras for each skill */
     id: 1,
     title: {EN: 'Programming Languages', DE: 'Programmiersprachen'},
-    stack: ['JavaScript (ES6)', 'TypeScript', 'HTML', 'CSS', 'Markdown', 'JSX', ],
+    stack: ['JavaScript (ES6)', 'TypeScript', 'Dart', 'HTML', '[S]CSS', 'Markdown', 'JSX'],
     type: ModalType.SKILLS,
   },
   {
     id: 2,
     title: {EN: 'Frameworks & Libraries', DE: 'Frameworks & Libraries'},
-    stack: ['React', 'Svelte', 'Next.js', 'Cypress', 'Three.js', 'GraphQL', 'Gatsby.js', 'Tailwind CSS', 'p5.js', 'Dexie.js', 'Mapbox GL JS'],
+    stack: ['React', 'Svelte', 'Next.js', 'Flutter', 'Cypress', 'Three.js', 'GraphQL', 'Gatsby.js', 'Tailwind CSS', 'p5.js', 'Dexie.js', 'Mapbox GL JS', 'Styled Components'],
     type: ModalType.SKILLS,
   },
   {
     id: 3,
     title: {EN: 'Tools & Platforms', DE: 'Tools & Plattformen'},
-    stack: ['Git', 'npm', 'Windows', 'Linux', 'Node.js', 'REST API', 'Agile', 'Vite', 'Webpack', 'CI/CD', 'Netlify', 'Vercel'],
+    stack: ['Git', 'npm', 'Windows', 'Linux', 'Node.js', 'REST API', 'Kanban', 'Jira', 'Vite', 'Webpack', 'CI/CD', 'Netlify', 'Vercel'],
     type: ModalType.SKILLS,
   },
   {
@@ -30,6 +30,22 @@ export const modalData: Modal[] = [
   },
   {
     id: 5,
+    title: {EN: 'Frontend Software Developer @ engram GmbH', DE: 'Frontend Software Entwickler* @ engram GmbH'},
+    date: '2024-08 – present',
+    duration: {EN: '2 months', DE: '2 Monate'},
+    description: {
+      EN: `
+        — Contribution Frontend development of a non-trivial hybrid mobile app + Vue 3 development with Composition API <br>
+        — Part of a large engineering team implementing Kanban-base Agile development methods through Atlassian ecosystem`, 
+      DE: `
+        — Beitrag zur Frontend-Entwicklung einer anspruchsvollen hybriden Mobile-App + Vue-Entwicklung mit Composition API <br>
+        — Teil eines Engineering-Teams, das Kanban-basierte Agile-Entwicklungsmethoden mithilfe des Atlassian-Ökosystems implementiert
+      `
+    },
+    type: ModalType.EXPERIENCE,
+  },
+  {
+    id: 6,
     title: {EN: 'Freelancer', DE: 'Freiberufler*'},
     date: '2022-03 – present',
     duration: {EN: '2 years', DE: '2 Jahre'},
@@ -45,7 +61,7 @@ export const modalData: Modal[] = [
     type: ModalType.EXPERIENCE,
   },
   {
-    id: 5,
+    id: 7,
     title: {EN: 'Web Programmer @ nota e.V.', DE: 'Web-Programmierer* @ nota e.V.'},
     date: '2022-04 – 2023-12 / Berlin, DE',
     duration: {EN: '1 year 8 months', DE: '1 Jahr 8 Monate'},
@@ -61,7 +77,7 @@ export const modalData: Modal[] = [
     type: ModalType.EXPERIENCE,
   },
   {
-    id: 6,
+    id: 8,
     title: {EN: 'Web Designer @ collectAI GmbH', DE: 'Webdesigner* @ collectAI GmbH'},
     date: '2021-07 – 2021-11 / Hamburg, DE',
     duration: {EN: '5 months', DE: '5 Monate'},
@@ -77,7 +93,7 @@ export const modalData: Modal[] = [
     type: ModalType.EXPERIENCE,
   },
   {
-    id: 7,
+    id: 9,
     title: {EN: 'UI/UX Designer @ Bremer Institut für Produktion und Logistik GmbH (BIBA)', DE: 'UI/UX-Designer* @ Bremer Institut für Produktion und Logistik GmbH (BIBA)'},
     date: '2019-06 – 2021-05 / Bremen, DE',
     duration: {EN: '2 years', DE: '2 Jahre'},
@@ -95,7 +111,7 @@ export const modalData: Modal[] = [
     type: ModalType.EXPERIENCE,
   },
   {
-    id: 8,
+    id: 10,
     title: {EN: '3D modeling & visualization', DE: '3D-Modellierung & Visualisierung'},
     date: '2012 – 2016 / Ankara, TR',
     duration: {EN: '4 years', DE: '4 Jahre'},
@@ -111,7 +127,7 @@ export const modalData: Modal[] = [
     type: ModalType.EXPERIENCE,
   },
   {
-    id: 9,
+    id: 11,
     title: {EN: 'University of Bremen + HfK Bremen', DE: 'Universität Bremen + HfK Bremen'},
     subtitle: {EN: 'Master’s in Digital Media', DE: 'Master-Abschluss in Digitale Medien'},
     date: '2018 – 2023 / Bremen, DE',
@@ -119,7 +135,7 @@ export const modalData: Modal[] = [
     type: ModalType.EDUCATION,
   },
   {
-    id: 10,
+    id: 12,
     title: {EN: 'Middle East Technical University', DE: 'Middle East Technical University'},
     subtitle: {EN: 'Bachelor of Architecture', DE: 'Bachelor in Architektur'},
     date: '2009 – 2014 / Ankara, TR',
