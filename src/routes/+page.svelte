@@ -19,7 +19,7 @@
       subtile: 'Frontend Web Developer based in Germany',
       updated: 'Last updated',
       modalBtn: {
-        experience: 'Relevant Expriences',
+        experience: 'Work Exprience',
         skills: 'Skills',
         education: 'Education'
       },
@@ -34,7 +34,7 @@
       subtile: 'Frontend Web Entwickler*',
       updated: 'Zuletzt aktualisiert',
       modalBtn: {
-        experience: 'Relevante Erfahrungen',
+        experience: 'Berufserfahrung',
         skills: 'Fähigkeiten',
         education: 'Ausbildung'
       },
@@ -67,7 +67,7 @@
   //   // const projectsNewerFirst = projects.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
   // }
 
-  const modalBtnStyle = 'bg-zinc-100 dark:bg-zinc-700 border border-zinc-200 dark:border-zinc-600 py-1 px-3 rounded-full';
+  const modalBtnStyle = 'bg-zinc-100 dark:bg-zinc-700 border border-zinc-200 dark:border-zinc-600 py-2 px-3 rounded-full text-lg';
   const contactIconStyle = 'h-4 w-4 md:h-5 md:w-5 stroke-[1.0] fill-none mr-4 md:mr-3';
   const settingsIconStyle = 'h-8 w-8 stroke-[1.0] fill-none';
 

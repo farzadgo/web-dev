@@ -4,14 +4,24 @@
 
 
 @layer base {
-	.modal a {
-		@apply underline underline-offset-2 decoration-[1.5px] decoration-zinc-400;
+	.modal {
+		a {
+			@apply underline underline-offset-2 decoration-[1.5px] decoration-zinc-400;
 
-		&:hover {
-			@apply underline;
+			&:hover {
+				@apply italic;
+			}
+		}
+
+		.description hr {
+			@apply h-2 border-0;
 		}
 	}
 	
+	button {
+		@apply select-none;
+	}
+
 	.no-scrollbar::-webkit-scrollbar {
 		display: none;
 	}

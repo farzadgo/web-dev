@@ -22,7 +22,7 @@
 
     {#each selectedData as item}
     <div class="mb-14">
-      <h2 class="text-lg md:text-xl font-bold mb-2"> {item.title[lang]} </h2>
+      <h2 class="text-xl md:text-2xl font-bold mb-2"> {item.title[lang]} </h2>
       {#if item.date}
         <div class="mb-4">
           {item.date}
@@ -35,7 +35,7 @@
         <p class="text-lg mb-2"> {item.subtitle[lang]} </p>
       {/if}
       {#if item.description}
-        <p class="text-sm leading-6"> {@html item.description[lang]} </p>
+        <p class="description leading-6"> {@html item.description[lang]} </p>
       {/if}
       {#if item.stack}
         <ul class="flex flex-wrap gap-2 md:gap-3 mt-4 font-mono">

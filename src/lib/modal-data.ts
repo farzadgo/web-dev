@@ -35,12 +35,12 @@ export const modalData: Modal[] = [
     duration: {EN: '2 months', DE: '2 Monate'},
     description: {
       EN: `
-        — Frontend development of enterprise apps through pair programming, code refactoring, fixing bugs, implementing new features <br>
-        — Part of a large engineering team practicing Kanban-based Agile development via Atlassian ecosystem (Jira, Bitbucket) extending to a Continuous Integration environment <br>
+        — Frontend development of enterprise apps through pair programming, code refactoring, fixing bugs, implementing new features <hr>
+        — Part of a large engineering team practicing Kanban-based Agile development via Atlassian ecosystem (Jira, Bitbucket) extending to a Continuous Integration environment <hr>
         — Actively engage in code reviews, engineering rounds, & knowledge sharing to foster a collaborative learning-oriented environment`, 
       DE: `
-        — Frontend-Entwicklung von Unternehmensanwendungen durch Pair Programming, Code-Refactoring, Bugfixing und Implementierung neuer Funktionen <br>
-        — Teil eines großen Engineering-Teams, das Kanban-basierte Agile-Entwicklungsmethoden über das Atlassian-Ökosystem (Jira, Bitbucket) in einer Continuous-Integration-Umgebung praktiziert <br>
+        — Frontend-Entwicklung von Unternehmensanwendungen durch Pair Programming, Code-Refactoring, Bugfixing und Implementierung neuer Funktionen <hr>
+        — Teil eines großen Engineering-Teams, das Kanban-basierte Agile-Entwicklungsmethoden über das Atlassian-Ökosystem (Jira, Bitbucket) in einer Continuous-Integration-Umgebung praktiziert <hr>
         — Aktive Teilnahme an Code-Reviews, Engineering-Runden und Wissensaustausch zur Förderung einer kollaborativen, lernorientierten Umgebung
       `
     },
@@ -53,10 +53,10 @@ export const modalData: Modal[] = [
     duration: {EN: '2 years', DE: '2 Jahre'},
     description: {
       EN: `
-        — Development of web applications and websites for clients <br>
+        — Development of web applications and websites for clients <hr>
         — Collaboration with designers and developers in various projects`, 
       DE: `
-        — Entwicklung von Webanwendungen und Websites für Kund*innen <br>
+        — Entwicklung von Webanwendungen und Websites für Kund*innen <hr>
         — Zusammenarbeit mit Designer*innen und Entwickler*innen in verschiedenen Projekten
       `
     },
@@ -69,12 +69,12 @@ export const modalData: Modal[] = [
     duration: {EN: '1 year 8 months', DE: '1 Jahr 8 Monate'},
     description: {
       EN: `
-        — Frontend development of a functional interface that ensures smooth and enjoyable user experience for the software <a href="https://nota.space" target="_blank"> nota.space </a> <br>
-        — Modern JavaScript and HTML5 programming for a full-stack, dynamic, and canvas-based web software with MVC pattern and custom scripting functionality for canvas elements <br>
+        — Frontend development of a functional interface that ensures smooth and enjoyable user experience for the software <a href="https://nota.space" target="_blank"> nota.space </a> <hr>
+        — Modern JavaScript and HTML5 programming for a full-stack, dynamic, and canvas-based web software with MVC pattern and custom scripting functionality for canvas elements <hr>
         — Collaborative Git-based version control to bugfix and add new features, as well as code commenting and reviews for knowledge sharing`, 
       DE: `
-        — Frontend-Entwicklung einer funktionalen Benutzeroberfläche, die eine reibungslose und angenehme Benutzererfahrung für die Software <a href="https://nota.space" target="_blank"> nota.space</a> gewährleistet <br>
-        — Programmierung mit modernem JavaScript und HTML5 für eine Full-Stack, dynamische, Canvas-basierte Websoftware mit MVC-Muster und benutzerdefinierter Skriptfunktionalität für Canvas-Elemente <br>
+        — Frontend-Entwicklung einer funktionalen Benutzeroberfläche, die eine reibungslose und angenehme Benutzererfahrung für die Software <a href="https://nota.space" target="_blank"> nota.space</a> gewährleistet <hr>
+        — Programmierung mit modernem JavaScript und HTML5 für eine Full-Stack, dynamische, Canvas-basierte Websoftware mit MVC-Muster und benutzerdefinierter Skriptfunktionalität für Canvas-Elemente <hr>
         — Zusammenarbeit mit Git-basierter Versionskontrolle zur Fehlerbehebung und zum Hinzufügen neuer Funktionen, einschließlich Codekommentierung und -überprüfung für den Wissensaustausch
       `
     },
@@ -87,12 +87,12 @@ export const modalData: Modal[] = [
     duration: {EN: '5 months', DE: '5 Monate'},
     description: {
       EN: `
-        — Responsive design and development of payment landing pages for various enterprises as customers <br>
-        — An ecosystem ranging from Figma to building with HTML/CSS and programming interactions with modern JavaScript <br>
+        — Responsive design and development of payment landing pages for various enterprises as customers <hr>
+        — An ecosystem ranging from Figma to building with HTML/CSS and programming interactions with modern JavaScript <hr>
         — Collaborate with designers and product managers to create cutting-edge solutions via Agile methodologies using Jira`,
       DE: `
-        — Responsives Design und Entwicklung von Zahlungs-Landingpages für verschiedene Unternehmen als Kunden <br>
-        — Ein Ökosystem von Figma bis hin zur Entwicklung mit HTML/CSS und Programmierung von Interaktionen mit modernem JavaScript <br>
+        — Responsives Design und Entwicklung von Zahlungs-Landingpages für verschiedene Unternehmen als Kunden <hr>
+        — Ein Ökosystem von Figma bis hin zur Entwicklung mit HTML/CSS und Programmierung von Interaktionen mit modernem JavaScript <hr>
         — Zusammenarbeit mit Designer*innen und Produktmanager*innen zur Schaffung innovativer Lösungen mittels agiler Methoden über Jira
       `
     },
@@ -105,12 +105,12 @@ export const modalData: Modal[] = [
     duration: {EN: '2 years', DE: '2 Jahre'},
     description: {
       EN: `
-        — Research and design voice- and graphical user interface regarding an award-winning chatbot app <br>
-        — Design and research for the development of a GUI-based platform for state machines and SCXML <br>
+        — Research and design voice- and graphical user interface regarding an award-winning chatbot app <hr>
+        — Design and research for the development of a GUI-based platform for state machines and SCXML <hr>
         — Communicate and collaborate with a team of engineers & designers through Agile workflow (Jira)`,
       DE: `
-        — Forschung und Design von Sprach- und grafischen Benutzeroberflächen für eine preisgekrönte Chatbot-App <br>
-        — Design und Forschung für die Entwicklung einer GUI-basierten Plattform für Zustandsautomaten und SCXML <br>
+        — Forschung und Design von Sprach- und grafischen Benutzeroberflächen für eine preisgekrönte Chatbot-App <hr>
+        — Design und Forschung für die Entwicklung einer GUI-basierten Plattform für Zustandsautomaten und SCXML <hr>
         — Kommunikation und Zusammenarbeit mit einem Team von Ingenieur*innen und Designer*innen durch agiles Workflow (Jira)
       `
     },
@@ -123,10 +123,10 @@ export const modalData: Modal[] = [
     duration: {EN: '4 years', DE: '4 Jahre'},
     description: {
       EN: `
-        — Design, 3D and algorithmic modeling, and visualization for various clients and architecture projects <br>
+        — Design, 3D and algorithmic modeling, and visualization for various clients and architecture projects <hr>
         — In collaboration with teams of engineers and designers from various disciplines`,
       DE: `
-        — Design, 3D- und algorithmische Modellierung und Visualisierung für verschiedene Designbüros und Architekturprojekte <br>
+        — Design, 3D- und algorithmische Modellierung und Visualisierung für verschiedene Designbüros und Architekturprojekte <hr>
         — In Zusammenarbeit mit Teams von Ingenieur*innen und Designer*innen aus verschiedenen Disziplinen
       `
     },
