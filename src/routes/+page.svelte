@@ -9,7 +9,7 @@
 
   const sitedata = {
     title: 'farzadgo',
-    description: 'Farzad Golghasemi: Frontend Software Developer based in Germany',
+    description: 'Farzad Golghasemi: Software Developer based in Germany',
     image: '/farzadgo_dev.png',
     url: 'https://fago.vercel.app'
   }
@@ -169,7 +169,7 @@
   </ul>
 
   <div class="flex gap-4 md:gap-5 justify-end mb-14 md:mb-20 items-center">
-    <p class="text-xs md:text-sm mt-auto"> {content.updated} September 2024 </p>
+    <p class="text-xs md:text-sm mt-auto"> {content.updated} November 2024 </p>
     <a href={content.downloadUrl} download> <Download class={settingsIconStyle}/> </a>
     <button on:click={toogleTheme}>
       {#if activeTheme === 'dark'}

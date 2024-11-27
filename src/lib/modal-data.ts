@@ -1,25 +1,25 @@
 import type { Modal } from './types';
 import { ModalType } from './types';
 
-/* Bash, Python, Docker, Express.js, SQL, PostgreSQL, WebSockets, Socket.io, Jest, Chakra UI, Bootstrap, SCSS, PostCSS, Rollup, CircleCI, Github Actions, GitLab CI, Datadog, ... */
+/* SQL, PostgreSQL, WebSockets, Python... */
 
 export const modalData: Modal[] = [
   {
     id: 12,
     title: {EN: 'Programming Languages', DE: 'Programmiersprachen'},
-    stack: ['JavaScript (ES6)', 'TypeScript', 'Dart', 'HTML', '[S]CSS', 'Markdown', 'JSX'],
+    stack: ['JavaScript (ES6+)', 'TypeScript', 'Dart', 'HTML', '[S]CSS', 'Bash'],
     type: ModalType.SKILLS,
   },
   {
     id: 11,
     title: {EN: 'Frameworks & Libraries', DE: 'Frameworks & Libraries'},
-    stack: ['React', 'Svelte', 'Next.js', 'Flutter', 'Cypress', 'Three.js', 'GraphQL', 'Gatsby.js', 'Tailwind CSS', 'p5.js', 'Dexie.js', 'Mapbox GL JS', 'Styled Components'],
+    stack: ['React', 'Vue 3', 'Svelte', 'Next.js', 'Flutter', 'Cypress', 'Three.js', 'GraphQL', 'Gatsby.js', 'Tailwind', 'p5.js', 'Mapbox GL JS', 'Quasar', 'Vuetify', 'Framer Motion', 'Styled Components'],
     type: ModalType.SKILLS,
   },
   {
     id: 10,
     title: {EN: 'Tools & Platforms', DE: 'Tools & Plattformen'},
-    stack: ['Git', 'npm', 'Windows', 'Linux', 'Node.js', 'REST API', 'Kanban', 'Jira', 'Vite', 'Webpack', 'CI/CD', 'Netlify', 'Vercel'],
+    stack: ['Git', 'npm', 'Linux', 'Node.js', 'REST API', 'Docker', 'Jira', 'Vite', 'Webpack', 'Gradle'],
     type: ModalType.SKILLS,
   },
   {
@@ -32,15 +32,15 @@ export const modalData: Modal[] = [
     id: 8,
     title: {EN: 'Frontend Software Developer @ engram GmbH', DE: 'Frontend Software Entwickler* @ engram GmbH'},
     date: '2024-08 – present / Bremen, DE',
-    duration: {EN: '2 months', DE: '2 Monate'},
+    duration: {EN: '5 months', DE: '5 Monate'},
     description: {
       EN: `
         — Frontend development of enterprise apps through pair programming, code refactoring, fixing bugs, implementing new features <hr>
-        — Part of a large engineering team practicing Kanban-based Agile development via Atlassian ecosystem (Jira, Bitbucket) extending to a Continuous Integration environment <hr>
+        — Part of a large engineering team practicing Kanban-based Agile development via Atlassian ecosystem (Jira, Bitbucket) extending to a Continuous Integration pipelines <hr>
         — Actively engage in code reviews, engineering rounds, & knowledge sharing to foster a collaborative learning-oriented environment`, 
       DE: `
         — Frontend-Entwicklung von Unternehmensanwendungen durch Pair Programming, Code-Refactoring, Bugfixing und Implementierung neuer Funktionen <hr>
-        — Teil eines großen Engineering-Teams, das Kanban-basierte Agile-Entwicklungsmethoden über das Atlassian-Ökosystem (Jira, Bitbucket) in einer Continuous-Integration-Umgebung praktiziert <hr>
+        — Teil eines großen Engineering-Teams, das Kanban-basierte Agile-Entwicklungsmethoden über das Atlassian-Ökosystem (Jira, Bitbucket) in einer Continuous-Integration-Pipelines praktiziert <hr>
         — Aktive Teilnahme an Code-Reviews, Engineering-Runden und Wissensaustausch zur Förderung einer kollaborativen, lernorientierten Umgebung
       `
     },
